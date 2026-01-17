@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #1d4d72;
-    --secondary-color: #333333;
-    --accent-color: #F5FB3A;
-    --accent-color-ghost: rgba(245, 251, 58, 0.7);
-    --light-text: #feffee;
-    --dark-text: #000a13;
+--primary-color: #2e5a88;
+    --secondary-color: #222222;
+    --accent-color: #ffd700;
+    --light-text: #ffffff;
+    --dark-text: #111111;
+    --hover-bg: #444444;
 }
 
 * {
@@ -51,9 +51,12 @@ header nav a {
     text-align: center;
 }
 
+
 header nav a:hover {
-    background-color: var(--accent-color-ghost);
-    color: var(--dark-text);
+        background-color: transparent;
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: calc(1rem - 2px);
 }
 
 main {
