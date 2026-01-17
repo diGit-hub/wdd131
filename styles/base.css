@@ -1,10 +1,9 @@
 :root {
---primary-color: #2e5a88;
+    --primary-color: #2e5a88;
     --secondary-color: #222222;
     --accent-color: #ffd700;
     --light-text: #ffffff;
-    --dark-text: #111111;
-    --hover-bg: #444444;
+    --dark-text: #1a1a1a;
 }
 
 * {
@@ -49,6 +48,7 @@ header nav a {
     padding: 1rem;
     flex-grow: 1;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
