@@ -2,6 +2,7 @@
     --primary-color: #1d4d72;
     --secondary-color: #333333;
     --accent-color: #F5FB3A;
+    --accent-color-ghost: rgba(245, 251, 58, 0.7);
     --light-text: #feffee;
     --dark-text: #000a13;
 }
@@ -30,7 +31,7 @@ header span {
     font-weight: 700;
     background-color: var(--primary-color);
     color: var(--light-text);
-    border-bottom: var(--accent-color) 1px solid;
+    border-bottom: var(--accent-color-ghost) 1px solid;
 }
 
 header nav {
@@ -47,7 +48,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-ghost);
     color: var(--dark-text);
 }
 
