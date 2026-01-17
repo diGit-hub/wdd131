@@ -40,6 +40,7 @@ header span {
 header nav {
     display: flex;
     background-color: var(--secondary-color);
+    color: var(--light-text);
 }
 
 header nav a {
