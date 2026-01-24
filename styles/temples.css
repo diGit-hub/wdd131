@@ -1,0 +1,152 @@
+:root {
+    --primary: #244ead;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+
+}
+
+header {
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--primary);
+}
+
+header span {
+    font-weight: 600;
+    font-size: larger;
+    padding: 0.9rem;
+}
+
+#menu {
+    font-size: 3rem;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    display: flex;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+    margin: 0px;
+}
+
+#menu.open::before {
+    content: "\2715";
+    font-size: 3rem;
+}
+
+.active {
+    text-decoration: underline double;
+    text-decoration-thickness: 0.01rem;
+    text-underline-offset: 4px;
+    color: cornsilk;
+}
+
+nav {
+    display: none;
+    row-gap: 1rem;
+    justify-content: space-evenly;
+}
+
+nav.open{
+    display: flex;
+    flex-direction: column;
+    background-color: #2a58b5;
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top: 100%;
+    left: 0px
+}
+
+nav a,
+header span {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a {
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #3e4a61;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    place-items: center;
+    text-align: center;
+    margin: 4rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.album figure {
+    margin: 0;
+    width: 100%;
+}
+
+.album img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img {
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary);
+    color: aliceblue;
+    padding: 1rem;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}

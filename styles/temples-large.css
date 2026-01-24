@@ -1,0 +1,17 @@
+@media (min-width: 640px) {
+    nav {
+        display: flex;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: auto;
+        background-color: none;
+    }
+
+    #menu {
+        display: none;
+    }
+}
