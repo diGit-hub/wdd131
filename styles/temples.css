@@ -67,7 +67,7 @@ nav {
 nav.open{
     display: flex;
     flex-direction: column;
-    background-color: #2a58b5;
+    background-color: var(--primary);
     text-align: center;
     width:100%;
     position: absolute;

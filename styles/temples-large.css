@@ -8,7 +8,7 @@
         flex-direction: row;
         position: relative;
         width: auto;
-        background-color: none;
+        background: none;
     }
 
     #menu {
