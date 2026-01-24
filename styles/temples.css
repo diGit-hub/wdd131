@@ -107,7 +107,8 @@ h1 {
     gap: 2rem;
     place-items: center;
     text-align: center;
-    margin: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     margin-bottom: 2rem;
     justify-content: center;
 }
