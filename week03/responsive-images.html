@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Mercês Silva">
+    <meta name="description" content="Web page for testing image responsiveness">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img alt="Temple of Singapore 3d model image" src="images/hero-small.webp" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
