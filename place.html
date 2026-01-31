@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Mercês Silva">
+    <meta name="description" content="Webpage showing some of Brazil's relevant data">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-query.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Country Page | Gabriel Mercês</title>
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <picture>
+            <!--1600×1066, 1024×1066, 640×960-->
+            <source srcset="images/jp-large.webp" media="(min-width: 1025px)" width="1600" height="1066">
+            <source srcset="images/jp-medium.webp" media="(min-width: 641px)" width="1024" height="1066">
+            <img alt="Brazil" src="images/jp-small.webp" width="640" height="960">
+        </picture>
+        <section>
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>8,515,767 km²</dd>
+                <dt>Population:</dt>
+                <dd>212,147,125</dd>
+                <dt>Capital:</dt>
+                <dd>Brasília</dd>
+                <dt>Languages:</dt>
+                <dd>Brazilian Portuguese, Libras</dd>
+                <dt>Currency:</dt>
+                <dd>Real</dd>
+                <dt>Time Zone:</dt>
+                <dd>BRT</dd>
+                <dt>Calling Code:</dt>
+                <dd>+55</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.br</dd>
+            </dl>
+        </section>
+        <section class="weather-section">
+            <h2 class="weather-h2">Weather</h2>
+            <img src="images/weather.svg" alt="Weather Icon" width="150px" height="auto">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd id="temperature"></dd>
+                <dt>Condition:</dt>
+                <dd>Sunny</dd>
+                <dt>Wind Speed:</dt>
+                <dd id="wind-speed"></dd>
+                <dt>Wind Chill:</dt>
+                <dd id="wind-chill"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> 🇧🇷 Gabriel Mercês Silva 🇧🇷 Bahia - BR</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@media (min-width: 1025px) {
+    main {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    picture img {
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        object-fit: cover;
+        border: none;
+    }
+
+    section,
+    .weather-section {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.525);
+        width: 30%;
+        height: auto;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    section:first-of-type {
+        top: 10%;
+        left: 5%;
+    }
+
+    .weather-section {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    h2 {
+        background-color: #1b5e20;
+        color: white;
+        padding: 1rem;
+        margin: 0;
+        margin-left: -2rem;
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    dl {
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    dt {
+        text-align: right;
+        font-weight: bold;
+        color: #333;
+    }
+
+    dd {
+        text-align: left;
+        margin: 0;
+        color: #555;
+    }
+
+    .weather-section img {
+        display: none;
+    }
+
+    .weather-h2::after {
+        content: " \26C5";
+        font-size: 1.5rem;
+        color: white;
+        margin-left: 10px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
