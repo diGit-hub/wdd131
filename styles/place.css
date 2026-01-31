@@ -45,7 +45,8 @@ picture img {
 }
 
 section {
-    margin: 5rem;
+    margin: 5rem 0 5rem 0;
+    padding: 0 1rem 0 1rem;
     background-color: var(--background-color);
 }
 

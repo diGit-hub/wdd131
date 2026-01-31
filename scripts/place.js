@@ -7,7 +7,7 @@ const temperature = 10;
 const windSpeed = 10;
 
 document.querySelector("#temperature").textContent = `${temperature}°C`;
-document.querySelector("#wind-speed").textContent = `${windSpeed}k/h`;
+document.querySelector("#wind-speed").textContent = `${windSpeed}km/h`;
 
 let windChill = "N/A";
 function calculateWindChill(temp, speed) {
