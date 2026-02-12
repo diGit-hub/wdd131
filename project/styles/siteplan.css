@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1F2937;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Cinzel', serif;
+    color: #1E3A8A;
+    /* Primary Color */
+}
+
+.color-sample {
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+.primary-bg {
+    background-color: #1E3A8A;
+}
+
+.secondary-bg {
+    background-color: #F59E0B;
+}
+
+.accent-bg {
+    background-color: #D1D5DB;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
