@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted - WDD 131</title>
+    <meta name="description" content="Product review confirmation page">
+    <meta name="author" content="Gabriel Mercês Silva">
+    <link rel="stylesheet" href="styles/form.css">
+    <script>
+        let reviewCount = localStorage.getItem('reviewCount') || 0;
+        reviewCount++;
+        localStorage.setItem('reviewCount', reviewCount);
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Review Submitted!</h1>
+        <p>Thank you for your review.</p>
+        <p>Reviews completed: <span id="counter"></span></p>
+        <a href="form.html">Back to Form</a>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> Gabriel Mercês Silva - Bahia, BR</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script>
+        document.getElementById('counter').textContent = localStorage.getItem('reviewCount');
+    </script>
+</body>
+
+</html>
