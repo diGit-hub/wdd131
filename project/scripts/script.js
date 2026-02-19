@@ -68,6 +68,7 @@ const characters = [
         type: "Control",
         rank: "Title Douluo",
         description: "The protagonist with twin spirits.",
+        image: "Tang_San_Anime14.webp",
         color: "#1E3A8A"
     },
     {
@@ -76,6 +77,7 @@ const characters = [
         type: "Agility",
         rank: "Spirit Douluo",
         description: "A 100,000-year spirit beast who became human.",
+        image: "Xiao_Wu_Teen_Portal.webp",
         color: "#EC4899"
     },
     {
@@ -84,6 +86,7 @@ const characters = [
         type: "Power",
         rank: "Spirit Sage",
         description: "Leader of the Seven Shrek Devils.",
+        image: "Dai_Mubai_Mug.webp",
         color: "#F59E0B"
     },
     {
@@ -92,6 +95,7 @@ const characters = [
         type: "Support",
         rank: "Spirit Douluo",
         description: "Unique food-type spirit master.",
+        image: "Oscar_Anime_34.webp",
         color: "#10B981"
     },
     {
@@ -100,6 +104,7 @@ const characters = [
         type: "Support",
         rank: "Spirit Douluo",
         description: "Heir to the Seven Treasure Glazed Tile Clan.",
+        image: "",
         color: "#8B5CF6"
     },
     {
@@ -108,6 +113,7 @@ const characters = [
         type: "Power",
         rank: "Spirit Sage",
         description: "Possesses the variant Evil Fire Phoenix.",
+        image: "",
         color: "#EF4444"
     },
     {
@@ -116,6 +122,7 @@ const characters = [
         type: "Agility",
         rank: "Spirit Sage",
         description: "Speed specialist with stealth capabilities.",
+        image: "",
         color: "#6366F1"
     },
     {
@@ -124,6 +131,7 @@ const characters = [
         type: "Control",
         rank: "Title Douluo",
         description: "Pope of Spirit Hall and main antagonist.",
+        image: "",
         color: "#059669"
     }
 ];
@@ -208,11 +216,16 @@ function displayCharacters() {
         
         const isFav = localStorage.getItem("favChar") === char.name;
         
+        let imgHtml;
+        if (char.image) {
+            imgHtml = `<img src="images/${char.image}" alt="${char.name}" loading="lazy">`;
+        } else {
+            imgHtml = `<div class="char-img" style="background-color: ${char.color}"><span>${char.name}</span></div>`;
+        }
+        
         grid.innerHTML += `
             <div class="char-card">
-                <div class="char-img" style="background-color: ${char.color}">
-                    <span>${char.name}</span>
-                </div>
+                ${imgHtml}
                 <h3>${char.name}</h3>
                 <p><strong>Spirit:</strong> ${char.spirit}</p>
                 <p><strong>Type:</strong> ${char.type}</p>
