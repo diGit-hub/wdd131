@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Mercês Silva">
+    <meta name="description" content="Contact page for Douluo Dalu Wiki.">
+    <title>Contact - Douluo Dalu Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Douluo Dalu Wiki</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ranks.html">Spirit Ranks</a>
+            <a href="characters.html">Characters</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions about the wiki? Send us a message.</p>
+            
+            <form id="contactForm">
+                <p>
+                    <label for="nameInput">Name:</label><br>
+                    <input type="text" id="nameInput" name="name" required>
+                </p>
+                
+                <p>
+                    <label for="emailInput">Email:</label><br>
+                    <input type="email" id="emailInput" name="email" required>
+                </p>
+                
+                <p>
+                    <label for="msgInput">Message:</label><br>
+                    <textarea id="msgInput" name="message" rows="5" required></textarea>
+                </p>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <div id="formResult"></div>
+        </section>
+
+        <section>
+            <h2>Your Favorites</h2>
+            <div id="favoriteRank"></div>
+            <div id="favoriteChar"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Mercês Silva</p>
+        <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+    </footer>
+</body>
+
+</html>
